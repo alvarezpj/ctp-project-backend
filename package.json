@@ -1,0 +1,27 @@
+{
+  "name": "linkup_backend",
+  "version": "1.0.0",
+  "description": "Back end system for LinkUp application",
+  "main": "index.js",
+  "scripts": {
+    "start_dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/alvarezpj/ctp-project-backend.git"
+  },
+  "author": "Victor Alvarez Pajaro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvarezpj/ctp-project-backend/issues"
+  },
+  "homepage": "https://github.com/alvarezpj/ctp-project-backend#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0",
+    "nodemon": "^1.18.11"
+  }
+}
