@@ -20,7 +20,7 @@ npm run start_dev
 | first_name : STRING |
 | last_name : STRING |
 | email : STRING, UNIQUE |
-| password : STRING |
+| password_hash : STRING |
 
 | users_events |
 |:------------:|
