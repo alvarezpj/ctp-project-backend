@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/alvarezpj/ctp-project-backend#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pg": "^7.10.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^5.7.6",
+    "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {
     "dotenv": "^7.0.0",
