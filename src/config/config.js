@@ -1,11 +1,11 @@
-const { database, username, password, host, dialect } = require('./nodenv');
+const { database, username, password } = require('./nodenv');
 
 module.exports = {
   development: {
     username: username,
     password: password,
     database: database,
-    host: host,
-    dialect: dialect
+    host: '127.0.0.1',
+    dialect: 'postgres'
   }
 };
