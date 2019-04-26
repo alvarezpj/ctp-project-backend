@@ -1,10 +1,11 @@
-const dotenv = require('dotenv');
+const { database, username, password } = require('./nodenv');
 
-
-dotenv.config();
-
-// export environment variables
 module.exports = {
-    node_env: process.env.NODE_ENV,
-    port: process.env.PORT,
+  development: {
+    username: username,
+    password: password,
+    database: database,
+    host: '127.0.0.1',
+    dialect: 'postgres'
+  }
 };

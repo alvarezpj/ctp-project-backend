@@ -1,5 +1,5 @@
 const express = require('express');
-const { port } = require('./config/config');
+const { port } = require('./config/nodenv');
 
 
 const app = express();
