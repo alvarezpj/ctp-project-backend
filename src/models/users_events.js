@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             type: DataTypes.INTEGER
         }
-    }, { timestamps: false });
+    }, { underscored: true });
 
     users_events.associate = function(models) {
         // associations can be defined here
