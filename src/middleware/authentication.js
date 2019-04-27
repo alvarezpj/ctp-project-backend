@@ -12,7 +12,7 @@ const options = {
 // verify legitimacy of token
 const strategy = new jwtStrategy(options, (jwt_payload, done) => {
     // check whether a user exists in database with provided id in token
-    return users
+    users
         .findByPk(jwt_payload.id)
         .then(user => {
             if (!user) {
