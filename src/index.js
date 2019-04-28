@@ -18,7 +18,7 @@ passport.use(strategy);
 app.use(passport.initialize());
 
 // set up application routes
-app.get('/api/meetup', fetchFromApi);
+app.post('/api/meetup', fetchFromApi);
 app.post('/api/signup', register);
 app.post('/api/login', login);
 
