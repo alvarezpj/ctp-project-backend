@@ -50,7 +50,7 @@ const controllers = {
         .then(user => {
             if (!user) {
                 // if not, notify the user
-                res.status(401).send('Incorrect email credential');
+                res.status(401).send('Incorrect email or password');
             } else {
                 // if yes, proceed to compare password against hash
                 bcrypt
@@ -58,7 +58,7 @@ const controllers = {
                     .then(result => {
                         if (!result) {
                             // now, notify user if the provided password is incorrect
-                            res.status(401).send('Incorrect password');
+                            res.status(401).send('Incorrect email or password');
                         } else {
                             // else, sign and submit jwt token along user information
                             res.status(200).json({
