@@ -6,8 +6,8 @@ const { port }          =   require('./config/nodenv');
 const register          =   require('./controllers/users').register;
 const login             =   require('./controllers/users').login;
 const strategy          =   require('./middleware/authentication');
-const fetchAllEvents      =   require('./middleware/meetup');
-const fetchEvent      =   require('./middleware/meetupEvent');
+const fetchAllEvents    =   require('./middleware/meetup').getAllEvents;
+const fetchEvent        =   require('./middleware/meetup').getEvent;
 
 
 const app = express();
