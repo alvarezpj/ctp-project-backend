@@ -8,6 +8,7 @@ const login             =   require('./controllers/users').login;
 const strategy          =   require('./middleware/authentication');
 const fetchAllEvents    =   require('./middleware/meetup').getAllEvents;
 const fetchEvent        =   require('./middleware/meetup').getEvent;
+const fetchEventPhotos  =   require('./middleware/meetup').getEventPhoto;
 
 
 const app = express();
@@ -22,6 +23,7 @@ app.use(passport.initialize());
 // set up application routes
 app.post('/api/meetup', fetchAllEvents);
 app.post('/api/meetupEvent',fetchEvent);
+app.post('/api/meetupEventPhotos',fetchEventPhotos);
 app.post('/api/signup', register);
 app.post('/api/login', login);
 
